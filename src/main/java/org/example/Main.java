@@ -13,10 +13,16 @@ public class Main {
 
         try{
 
+            // API Access
             var secretId = args[0];
-            var secretKey = args[0];
+            var secretKey = args[1];
 
-            Credential cred = new Credential("SecretId", "SecretKey");
+            // Application
+            var applicationId = args[2];
+            var environmentId = args[3];
+            var version = args[4];
+
+            Credential cred = new Credential(secretId, secretKey);
 
             HttpProfile httpProfile = new HttpProfile();
             httpProfile.setEndpoint("tem.tencentcloudapi.com");
@@ -27,9 +33,9 @@ public class Main {
             TemClient client = new TemClient(cred, "ap-tokyo", clientProfile);
 
             RollingUpdateApplicationByVersionRequest req = new RollingUpdateApplicationByVersionRequest();
-            req.setApplicationId("application-ojb27d7j");
-            req.setEnvironmentId("environment-l5mmvyy5");
-            req.setDeployVersion("v20220812_1855");
+            req.setApplicationId(applicationId);
+            req.setEnvironmentId(environmentId);
+            req.setDeployVersion(version);
             req.setDeployStrategyType("AUTO");
             req.setTotalBatchCount(1L);
 

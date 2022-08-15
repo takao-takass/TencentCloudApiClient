@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TencentCloudApiClient:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TencentCloudApiClient_jar</output-path>
+    <root id="archive" name="TencentCloudApiClient.jar">
+      <element id="module-output" name="TencentCloudApiClient" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/squareup/okhttp/okhttp/2.5.0/okhttp-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/tencentcloudapi/tencentcloud-sdk-java-intl-en/3.0.497/tencentcloud-sdk-java-intl-en-3.0.497.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/squareup/okio/okio/1.6.0/okio-1.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
