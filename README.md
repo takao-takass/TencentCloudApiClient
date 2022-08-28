@@ -1,6 +1,7 @@
 # TencentCloudApiClient
 - Tencent CloudのAPIをコンソールから叩くためのアプリ
+  - curlでAPIたたくのしんどい。あいだにSDK挟も。
+- 最新APIが実装ははJava SDKが一番早そう。Javaでいく。
 - ひとまずTEMのみ。
-- 最新のAPIが実装されるSDKはJavaが一番早そうなのでJavaを採用。
 - package名変え忘れたのでorg.exampleになっている。
 - Java11以上が必要。
